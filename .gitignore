@@ -1,0 +1,10 @@
+# Public repository = documentation only, for now.
+# Ignore EVERYTHING, then explicitly allow just the files meant to be published.
+# This guarantees no source or binaries leak even with an accidental `git add .`.
+# To publish source later, add more `!`-exceptions (or remove this whitelist).
+
+/*
+
+!/.gitignore
+!/README.md
+!/screenshots/
