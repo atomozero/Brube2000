@@ -4,7 +4,7 @@
 - **Rischio:** nullo
 - **Effort:** ~mezza sessione (opzionale)
 - **Dipende da:** —
-- **Stato:** Da iniziare
+- **Stato:** ✅ Fatto
 
 ## Obiettivo
 
@@ -13,13 +13,11 @@ si bloccano su scelte di fondo.
 
 ## Lavoro (checklist)
 
-- [ ] `docs/architecture.md`: schema a strati (GUI → Player → `MusicService` /
+- [x] `docs/architecture.md`: schema a strati (GUI → Player → `MusicService` /
       `AudioDecoder` / `AudioOutput`) con i confini chiari.
-- [ ] Decidere il **naming**: Brube2000 resta il brand Spotify? Il core condiviso
-      come si chiama (es. `libbrube` / `MediaCore`)?
-- [ ] Decisione preliminare **app-unica-con-selettore** vs **due-app-su-libreria**
-      (rivedibile in Fase 5, ma orienta il refactor).
-- [ ] Confermare lo scope: MQA / Dolby Atmos / DRM forte **esclusi**.
+- [x] Decidere il **naming** → `docs/decisions.md` D1.
+- [x] Decisione preliminare **app-unica** vs **due-app** → `docs/decisions.md` D2.
+- [x] Confermare lo scope (MQA / Atmos / DRM esclusi) → `docs/decisions.md` D3.
 
 ## Definition of Done
 
