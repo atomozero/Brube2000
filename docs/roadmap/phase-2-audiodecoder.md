@@ -4,7 +4,9 @@
 - **Rischio:** basso
 - **Effort:** S
 - **Dipende da:** Fase 1
-- **Stato:** Da iniziare
+- **Stato:** ✅ Fatto — `AudioDecoder` estratto, `VorbisDecoder` lo implementa,
+  `AudioOutput`/`AudioPlayer`/`NodeAudioPlayer` lavorano sul tipo generico.
+  Build pulita, comportamento invariato.
 
 ## Obiettivo
 
