@@ -33,8 +33,6 @@ If Brube2000 saves you time, consider supporting development: [![Buy Me A Coffee
 * Selectable audio **quality** (96 / 160 / 320 kbps OGG Vorbis)
 * Selectable audio **output**: BSoundPlayer (default) or an experimental Cortex
   Media Kit node — the app shows up in Cortex either way
-* A hidden old-school **demo** (double-click the ♫ tile)
-* "Mose/Sotoportego" family look — dark slate header over a native Haiku body
 * No dependencies beyond Haiku system libraries, OpenSSL, protobuf and libvorbis
 
 ## Quick start
