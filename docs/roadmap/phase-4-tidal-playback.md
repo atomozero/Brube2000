@@ -24,7 +24,9 @@ e VU come su Spotify.
 - [ ] **Fetcher a segmenti**: un `AudioSource` che scarica i segmenti in sequenza in
       un buffer che cresce (stesso pattern di `TrackStream`, ma HTTP invece di chunk
       AP). Supporta "suona subito, scarica in background".
-- [ ] **`FlacDecoder : AudioDecoder`** con `libFLAC` (presente su Haiku).
+- [x] **`FlacDecoder : AudioDecoder`** con `libFLAC` — ✅ fatto e verificato
+      (decodifica 16/24-bit → int16, seek). Build richiede `flac_devel` + `-lFLAC`.
+      Il Player sceglie il decoder da `AudioStream::Format` (Vorbis/Flac).
 - [ ] *(opzionale)* **`AacDecoder`** per i tier lossy (via Media Kit codec o ffmpeg).
 - [ ] Seek: riusa la logica "seekable once downloaded" già esistente, adattata al
       contenitore FLAC/AAC.
