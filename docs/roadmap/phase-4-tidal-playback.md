@@ -13,11 +13,12 @@ e VU come su Spotify.
 
 ## Lavoro (checklist)
 
-- [ ] **Migrazione streaming Spotify** (spostata qui dalla Fase 1): aggiungere
-      `OpenStream()`/`ResolveTrack()` a `MusicService`, spostare la catena di
-      streaming del Player dentro `SpotifyService::OpenStream` e far sì che il
-      Player consumi un `AudioStream` invece di possedere una sessione Spotify.
-      È il prerequisito per far suonare *qualsiasi* backend, Tidal incluso.
+- [x] **Migrazione streaming Spotify** (fatta in anticipo): `OpenStream()` +
+      `AudioStream` aggiunti a `MusicService`; la catena di streaming è dentro
+      `SpotifyService::OpenStream` (sessione di playback propria) e il Player
+      consuma un `AudioStream` — è **backend-agnostic**. Verificato: login,
+      riproduzione, seek, coda invariati. Restano solo i pezzi Tidal-specifici
+      qui sotto.
 - [ ] **`OpenStream`** (Tidal): `playbackinfo` per la traccia alla qualità scelta →
       ottieni URL/manifest (HLS o DASH).
 - [ ] **Fetcher a segmenti**: un `AudioSource` che scarica i segmenti in sequenza in

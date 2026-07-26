@@ -7,13 +7,11 @@
 - **Stato:** ✅ Fatto (read-side) — verificato: ricerca, libreria, artista/album,
   playback e seek invariati.
 
-> **Scope refinement:** la migrazione dello streaming del Player dietro
-> `OpenStream()` è stata **spostata alla Fase 4**. Motivo: tocca il cuore audio +
-> il ciclo di vita sessione/login (il pezzo più rischioso), e si fa in modo più
-> pulito e verificabile *end-to-end* quando il playback di Tidal costringe già ad
-> astrarre decoder e sessione. La Fase 1 consegna quindi il **read-side** di
-> `MusicService` (auth, ricerca, libreria, artista/album), che è ciò che serve
-> alla Fase 3 (Tidal read-only).
+> **Aggiornamento:** la migrazione dello streaming del Player dietro
+> `OpenStream()` era stata rinviata alla Fase 4, ma è stata **completata in
+> anticipo** (vedi Fase 4, primo task). Ora il Player è **backend-agnostic**: la
+> catena di streaming Spotify vive in `SpotifyService::OpenStream`, il Player
+> consuma un `AudioStream`. Login/riproduzione/seek/coda verificati invariati.
 
 ## Obiettivo
 
