@@ -21,7 +21,7 @@ Poi "una app o due" è una scelta di **packaging** secondaria (vedi Fase 5).
 | Fase | Titolo | Tipo | Rischio | Stato |
 |---|---|---|---|---|
 | [0](phase-0-preparation.md) | Preparazione (doc + decisioni) | doc | nullo | ✅ Fatto |
-| [1](phase-1-musicservice.md) | Estrazione `MusicService` | refactor | basso | Da iniziare |
+| [1](phase-1-musicservice.md) | Estrazione `MusicService` (read-side) | refactor | basso | ✅ Fatto |
 | [2](phase-2-audiodecoder.md) | Estrazione `AudioDecoder` | refactor | basso | Da iniziare |
 | [3](phase-3-tidal-readonly.md) | Backend Tidal read-only | nuovo | medio | Da iniziare |
 | [4](phase-4-tidal-playback.md) | Playback Tidal | nuovo | **alto** | Da iniziare |
