@@ -4,7 +4,12 @@
 - **Rischio:** medio (API non ufficiale) — ma **isolato**: se rompe, Spotify non ne risente
 - **Effort:** M
 - **Dipende da:** Fasi 1–2
-- **Stato:** Da iniziare
+- **Stato:** 🔄 In corso
+  - **3a — auth device-flow + dump JSON:** ✅ fatto (`tests/tidal_auth`,
+    `src/core/TidalClient.*`). Compila. **In attesa** che un beta tester con
+    account Tidal esegua il login e rimandi i `tidal-dump-*.json`.
+  - **3b — mapping su JSON reali:** da fare dopo i dump.
+  - **3c — GUI (selettore backend + finestra login):** da fare.
 
 ## Obiettivo
 
