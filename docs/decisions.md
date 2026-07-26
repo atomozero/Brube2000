@@ -15,3 +15,20 @@ resta **rivedibile** nelle fasi successive (in particolare il packaging in Fase 
 a nome generico diluirebbe il brand. Meglio un core neutro + app con brand distinto.
 
 _Stato: raccomandazione — confermare._
+
+## D2 — Packaging (preliminare)
+
+- Orientamento: **due app sottili su una libreria statica condivisa** (Brube2000 per
+  Spotify, una seconda app per Tidal).
+- Alternativa: **app unica con selettore servizio**, se la visione diventa "il player
+  musicale universale di Haiku".
+
+**Motivo:** entrambi i backend sono reverse-engineering fragili e c'è un solo
+sviluppatore. Due app isolano il *blast-radius* (se Tidal si rompe, Spotify no) e
+permettono brand e cadenza di rilascio indipendenti. Si perde la coda cross-servizio,
+ritenuta meno importante dell'isolamento.
+
+**Decisione definitiva rimandata alla Fase 5** (a costo basso una volta che il core è
+una libreria).
+
+_Stato: raccomandazione — confermare._
