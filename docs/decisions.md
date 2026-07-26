@@ -32,3 +32,14 @@ ritenuta meno importante dell'isolamento.
 una libreria).
 
 _Stato: raccomandazione — confermare._
+
+## D3 — Scope (confine valori)
+
+- Solo **streaming** di contenuti riproducibili in chiaro.
+- **Esclusi**: MQA e Dolby Atmos (proprietari), tracce con DRM forte, e qualunque
+  forma di salvataggio su file / ripping o aggiramento di protezioni.
+
+**Motivo:** coerenza col confine già tenuto per Spotify (streaming sì, ripping/DRM
+no) e con l'interoperabilità come unico obiettivo.
+
+_Stato: confermato._
