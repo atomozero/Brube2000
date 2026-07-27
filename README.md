@@ -6,7 +6,7 @@ scratch (Shannon cipher, Diffie-Hellman handshake, Mercury, AES-128-CTR audio
 decryption) and builds entirely on Haiku's own kits — Media Kit for audio,
 Interface Kit for the GUI, Network Kit for transport.
 
-![Brube2000 on Haiku](screenshots/Brube2000_V1.2.png)
+![Brube2000 on Haiku](screenshots/Brube2000_V1.3.png)
 
 > Reverse-engineering project for interoperability, modelled on librespot.
 > Requires a **Spotify Premium** account. Not affiliated with Spotify AB.
