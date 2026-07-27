@@ -8,8 +8,11 @@
   - **3a — auth device-flow + dump JSON:** ✅ fatto (`tests/tidal_auth`,
     `src/core/TidalClient.*`). Compila. **In attesa** che un beta tester con
     account Tidal esegua il login e rimandi i `tidal-dump-*.json`.
-  - **3b — mapping su JSON reali:** da fare dopo i dump.
-  - **3c — GUI (selettore backend + finestra login):** da fare.
+  - **3b — mapping su JSON reali:** ⛔ bloccato, da fare dopo i dump.
+  - **3c — GUI (selettore backend + finestra login):** ✅ fatto —
+    `src/gui/TidalLoginWindow.*` (device-flow in-app), selettore "Music service"
+    (App menu, Spotify/Tidal, applicato al riavvio), `src/core/TidalService.h`
+    (skeleton: auth ok, ricerca/libreria/playback "coming soon" fino a 3b/4).
 
 ## Obiettivo
 
