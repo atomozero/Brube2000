@@ -27,7 +27,7 @@ e VU come su Spotify.
 - [x] **`FlacDecoder : AudioDecoder`** con `libFLAC` — ✅ fatto e verificato
       (decodifica 16/24-bit → int16, seek). Build richiede `flac_devel` + `-lFLAC`.
       Il Player sceglie il decoder da `AudioStream::Format` (Vorbis/Flac).
-- [ ] *(opzionale)* **`AacDecoder`** per i tier lossy (via Media Kit codec o ffmpeg).
+- [x] *(opzionale)* **`AacDecoder`** (Media Kit) — ✅ fatto e verificato (M4A/AAC → int16, seek). Attivo quando un backend restituisce `Format::Aac`.
 - [ ] Seek: riusa la logica "seekable once downloaded" già esistente, adattata al
       contenitore FLAC/AAC.
 - [ ] Gestione qualità Tidal mappata sul selettore qualità esistente.
