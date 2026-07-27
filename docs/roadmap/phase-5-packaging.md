@@ -41,3 +41,7 @@ esplicitamente "il player musicale universale di Haiku" → allora A.
 
 Decisione a costo basso ormai: una volta che il core è una libreria, passare da
 un'app a due (o viceversa) è quasi solo lavoro di shell/packaging.
+
+## Aggiornamento (loop rifiniture)
+
+- [x] `lib:libFLAC` aggiunto ai requires dell'hpkg (dipendenza runtime del FlacDecoder).
