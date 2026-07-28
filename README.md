@@ -1,10 +1,12 @@
 # Brube2000
 
-Native **Haiku** Spotify client written in C++. It reimplements the
+Native **Haiku** music client written in C++, for **Spotify** (and **Tidal**,
+beta). It reimplements the
 [librespot](https://github.com/librespot-org/librespot) protocol core from
 scratch (Shannon cipher, Diffie-Hellman handshake, Mercury, AES-128-CTR audio
 decryption) and builds entirely on Haiku's own kits — Media Kit for audio,
-Interface Kit for the GUI, Network Kit for transport.
+Interface Kit for the GUI, Network Kit for transport. Backends plug in behind a
+single interface, so the same UI drives both services.
 
 ![Brube2000 on Haiku](screenshots/Brube2000_V1.3.png)
 
@@ -26,14 +28,33 @@ If Brube2000 saves you time, consider supporting development: [![Buy Me A Coffee
   endpoints, with no second login
 * Browse by **artist** (popular tracks, albums, singles) and by **album**
   (full track list), all clickable from the Now Playing pane
-* Search tracks and artists in a native results table; double-click to play,
-  double-click an artist to open their page
+* Search tracks, artists and albums in a native results table; double-click to
+  play, double-click an artist to open their page
+* Synced **lyrics** with a fullscreen **karaoke** mode that follows the track
+  line by line
+* **Winamp-style keyboard shortcuts** (Z/X/C/V/B, arrows for volume & seek,
+  L to search, M to mute) plus **repeat** and **shuffle** with header indicators
 * **VU meter** tied to the volume fader, and the album cover openable in its own
   full-resolution window
-* Selectable audio **quality** (96 / 160 / 320 kbps OGG Vorbis)
+* **OGG Vorbis, FLAC and AAC** decoding, so lossless backends play natively
+* Selectable audio **quality** (96 / 160 / 320 kbps OGG Vorbis on Spotify)
 * Selectable audio **output**: BSoundPlayer (default) or an experimental Cortex
   Media Kit node — the app shows up in Cortex either way
-* No dependencies beyond Haiku system libraries, OpenSSL, protobuf and libvorbis
+* No dependencies beyond Haiku system libraries, OpenSSL, protobuf, libvorbis
+  and libFLAC
+
+## Tidal (beta)
+
+Brube2000 also speaks **Tidal**. Switch backend from **App → Music service →
+Tidal**, then **App → Sign in to Tidal…** and either open the link or **scan the
+QR code with your phone** (no browser needed on the Haiku box). Once signed in
+you can search, browse artists and albums, see your library and cover art —
+all natively.
+
+**Playback needs a Tidal Premium/HiFi subscription.** A free account can browse
+and see metadata/covers, but streaming a full track requires a paid plan
+(Tidal returns "asset not ready" otherwise). Lossless FLAC playback is wired up
+and awaiting wider testing on paid accounts.
 
 ## Quick start
 
