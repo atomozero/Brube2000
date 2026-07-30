@@ -50,6 +50,7 @@ Brube2000 hey remote control is off — enable it in Account & Settings → Gene
 | `Repeat` | bool | ✓ | ✓ | |
 | `Shuffle` | bool | ✓ | ✓ | |
 | `Track` | string | | ✓ | set to a URI (`spotify:track:…` / `tidal:track:…`) to load and play it |
+| `Search` | string | | ✓ | set to a query to search and play the top matching track |
 
 Read values come back in the reply's `result` field.
 
@@ -83,6 +84,9 @@ hey application/x-vnd.brube2000 do Next
 
 # Load and play a specific track
 hey application/x-vnd.brube2000 set Track to "spotify:track:1301WleyT98MSxVHPZCA6M"
+
+# Search and play the top result (great for "play <song>" voice prompts)
+hey application/x-vnd.brube2000 set Search to "daft punk one more time"
 ```
 
 A successful `get` prints a `B_REPLY` with the value:
