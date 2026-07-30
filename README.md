@@ -34,14 +34,21 @@ If Brube2000 saves you time, consider supporting development: [![Buy Me A Coffee
   line by line
 * **Winamp-style keyboard shortcuts** (Z/X/C/V/B, arrows for volume & seek,
   L to search, M to mute) plus **repeat** and **shuffle** with header indicators
+* Winamp-style **PL** and **LIB** toggle buttons for the playlist and library
+  windows, lit while their window is open
 * **VU meter** tied to the volume fader, and the album cover openable in its own
   full-resolution window
 * **OGG Vorbis, FLAC and AAC** decoding, so lossless backends play natively
 * Selectable audio **quality** (96 / 160 / 320 kbps OGG Vorbis on Spotify)
 * Selectable audio **output**: BSoundPlayer (default) or an experimental Cortex
   Media Kit node — the app shows up in Cortex either way
-* No dependencies beyond Haiku system libraries, OpenSSL, protobuf, libvorbis
-  and libFLAC
+* **Remote control** — a native BeOS scripting interface lets Haiku's `hey`, the
+  [Pippo](https://github.com/atomozero/Pippo) MCP server or an LLM read state and
+  drive playback. Off by default, with separate opt-in permission levels for the
+  `hey` and MCP channels (see [docs/scripting.md](docs/scripting.md))
+* Settings organised in **tabs** (Spotify / Tidal / General)
+* No dependencies beyond Haiku system libraries, OpenSSL, protobuf, libvorbis,
+  libFLAC and libjpeg
 
 ## Tidal (beta)
 
