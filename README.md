@@ -38,6 +38,10 @@ If Brube2000 saves you time, consider supporting development: [![Buy Me A Coffee
   windows, lit while their window is open
 * **VU meter** tied to the volume fader, and the album cover openable in its own
   full-resolution window
+* Music-reactive **visualizer** — a jointed, Jamiroquai-style dancer that grooves
+  to the beat over a spectrum backdrop. Open it with the **VIZ** button, or drag
+  it out as a **desktop replicant** to dance on your wallpaper
+  (see [docs/visualizer.md](docs/visualizer.md))
 * **OGG Vorbis, FLAC and AAC** decoding, so lossless backends play natively
 * Selectable audio **quality** (96 / 160 / 320 kbps OGG Vorbis on Spotify)
 * Selectable audio **output**: BSoundPlayer (default) or an experimental Cortex
@@ -108,7 +112,8 @@ Open **View → Library** to load your liked songs and playlists (fetched over t
 authenticated session, so nothing extra to configure). Double-click a playlist to
 play the whole thing. Click an artist's name anywhere to open their page —
 popular tracks, albums and singles — and click an album to see its full track
-list.
+list. Double-click a track in an album to start there: it plays and the rest of
+the album is queued after it, so playback continues with the following track.
 
 ### Audio output (Cortex)
 
@@ -129,7 +134,7 @@ Build the Haiku package and install it:
 
 ```
 sh make-hpkg.sh
-pkgman install brube2000-1.2.0-1-x86_64.hpkg
+pkgman install brube2000-1.6.0-1-x86_64.hpkg
 ```
 
 ## Build
