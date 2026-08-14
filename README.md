@@ -13,6 +13,17 @@ single interface, so the same UI drives both services.
 > Reverse-engineering project for interoperability, modelled on librespot.
 > Requires a **Spotify Premium** account. Not affiliated with Spotify AB.
 
+> ⚠️ **Known issue — Spotify audio-key phase-out (since Dec 2025).** On some
+> accounts, Spotify playback now fails with *"Spotify refused the audio key
+> (audio key error (bytes 00 01))"*. This is a **server-side change by Spotify**,
+> not a Brube2000 bug: Spotify is retiring the legacy audio-key channel that
+> librespot-based clients use (in favour of its PlayPlay/Widevine DRM), rolling
+> it out account by account — newer accounts first. Login, search, library and
+> metadata still work; only the decryption key is refused. It affects upstream
+> [librespot](https://github.com/librespot-org/librespot/issues/1649) and
+> go-librespot identically, and **there is no client-side fix**. Older/unaffected
+> accounts still play, and the **Tidal** backend is unaffected.
+
 If Brube2000 saves you time, consider supporting development: [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-atomozero-yellow?logo=buymeacoffee)](https://buymeacoffee.com/atomozero)
 
 ## Features
@@ -134,7 +145,7 @@ Build the Haiku package and install it:
 
 ```
 sh make-hpkg.sh
-pkgman install brube2000-1.6.0-1-x86_64.hpkg
+pkgman install brube2000-1.6.1-1-x86_64.hpkg
 ```
 
 ## Build
